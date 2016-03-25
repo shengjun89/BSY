@@ -1,0 +1,178 @@
+*{margin:0; padding: 0;}
+body{
+	font-size: 14px;
+	font-family:"STXihei","Microsoft YaHei","STHeiti Light [STXihei]","SimHei";
+	color: #333;
+	position: relative;
+	background: #bdcabd;
+}
+h1{
+	font-size: 3em;
+	line-height:1.5em;
+}
+h2{
+	font-size: 2.25em;
+	line-height:1.3333333333em;
+}
+h3{
+	font-size: 1.5em;
+	line-height:2em;
+}
+h4{
+	font-size: 1.3125em;
+	line-height:2.28571em;
+}
+h5{
+	font-size: 1.125em;
+	line-height:1.33333333333em;
+}
+h6{
+	font-size: 1em;
+	line-height:1.5em;
+}
+p{
+	font-size: 1em;
+	line-height:1.5em;
+	margin: 1.5em 0;
+}
+body ul, body ul li{
+	list-style: none;
+}
+body ul li a{
+	text-decoration: none;
+	color: #5d5d5d;
+}
+body img{
+	width: 100%;
+	border: 0;
+	display: block;
+}
+/*主容器*/
+.container{
+	/*position: relative;*/
+	/*overflow: hidden;*/
+	background:#e8eee8;
+}
+/*右侧边栏容器*/
+#sideAticle .textIndet{
+	text-indent: 2em;
+}
+#sideAticle img{
+	padding-top: 18px;
+}
+/*侧边栏导航*/
+#sideNav ul li{
+	width: 100%;
+	line-height: 3.5em;
+}
+#sideNav ul li a{
+	width: 80%;
+	padding: 0.9em 0;
+	padding-right: 120px;
+	font-size:1.2em ;
+	border-bottom: 1px solid #5e5d5d;
+}
+#sideNav ul li a:not(first-child):hover{
+	color: #889b79;
+}
+
+#sideNav ul li a:active{
+	color: #e66a4d;
+}
+
+#sideNav ul li .current{
+	font-weight: bold;
+  	color: #889b79;
+  	border-bottom: 1px solid #889b79;
+	}
+#sideNav ul li .pagetitle{
+	/*line-height: 2.87em;*/
+  	font-size:1.34em;
+  	font-weight: bold;
+	}
+
+
+@media (max-width:491px){
+
+	#sideNav ul li{
+	width: 25%;
+	float: left;
+}	
+#sideNav ul:first-child{
+	width: 100%;
+	margin-left:0px;
+	clear:left;
+}
+#sideNav ul li .pagetitle{
+	line-height: 2.87em;
+  	font-size: 12px;
+  	font-weight: bold;
+}
+#sideNav ul li a{
+	width: 80%;
+ 	 padding: 0.9em 0;
+  	/* padding-right: 120px; */
+ 	 font-size: 12px;
+ 	 border: none;
+}
+
+}	
+	
+@media (min-width: 492px) and (max-width: 650px){
+	#sideNav ul li{
+	line-height: 3.5em;
+  	width: 19.2%;
+ 	 text-align: center;
+ 	 /* float: left; */
+ 	 display: inline-block;
+ 	 margin-left: -20px;
+	}
+	#sideNav ul:first-child{
+	margin-left:0px;
+	}	
+	#sideNav ul li .pagetitle{
+	line-height: 2.87em;
+  	font-size: 12px;
+  	font-weight: bold;
+	}
+	#sideNav ul li a{
+		padding: 0.9em 0;
+		font-size:12px;
+		display: inline;
+		border: none;
+	}
+}
+	
+
+@media (min-width:651px) and (max-width: 992px){
+	#sideNav ul li{
+	line-height: 3.5em;
+	width: 32%;
+	text-align: center;
+	/*float: left;*/
+	display: inline-block;
+	}
+	#sideNav ul:first-child{
+		margin-left: -20px;
+	}
+	
+	#sideNav ul li a{
+		width: 80%;
+		padding: 0.9em 0;
+		font-size:12px ;
+		display: inline;
+		border: none;
+	}
+	#sideNav ul li .pagetitle {
+	  line-height: 3.27em;
+	  font-size:12px;
+	  font-weight:bold;
+	}
+	}
+@media (min-width:993px){
+	#sideNav ul li .pagetitle {
+  	/* line-height: 2.87em; */
+  	font-size: 1.34em;
+  	font-weight: bold;
+  	}	
+}	
